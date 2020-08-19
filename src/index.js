@@ -1,26 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+const name ="shirshak";
+const currDate =new Date().toLocaleDateString();
+const currTime = new Date().toLocaleTimeString();
 
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-// Reactjs wa
 ReactDOM.render(
-   <>
-   <h1>Shirshak kandel Netflix pick </h1>
-   <p>Here is my fav 5 netflix series</p>
-   <ol>
-      <li>Dark</li>
-      <li>Mr robot</li>
-      <li>My Holo Love</li>
-      <li>Extracation</li>
-      <li>Ganstar</li>
-   </ol>
-   </> 
-   ,
-    document.getElementById('root')
+  <>
+   <h1> My name is {name}</h1>
+   <p>Current Date is = {currDate}</p>
+   <p>Current Time is = {currTime}</p>
+   </>,
+   document.getElementById("root")
+
+
 );
-
-
-
-serviceWorker.unregister();
